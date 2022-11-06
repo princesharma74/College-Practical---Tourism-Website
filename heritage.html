@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+</head>
+<style>
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .flex > div {
+        width: 30%;
+        margin: 8px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .flex > div > img {
+        width: 100%;
+        vertical-align: middle;
+        /* add shadow effect */
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .flex > div > img:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    /* add media query for tablet size */
+    @media screen and (max-width: 768px) {
+        .flex > div {
+            width: 45%;
+        }
+    }
+    /* add media query */
+    @media screen and (max-width: 600px) {
+        .flex > div {
+            width: 100%;
+        }
+        .flex{
+            flex-direction: column;
+        }
+    }
+
+    h1{
+        text-align: center;
+        /* add green gradient as a background */
+        color: black;
+        font-weight: 600;
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    h1:hover{
+        background-color: burlywood;
+        transition: 0.5s;
+    }
+
+</style>
+<body>
+    <header>
+        <div class="nav-container">
+            <div>
+                <img src="https://img.icons8.com/parakeet/96/null/deciduous-tree.png"/>
+                <span class="logo">Patna</span>
+            </div>
+            <div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="heritage.html">Heritage</a></li>
+                        <li><a href="hotel.html">Hotel Booking</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+        <h1>Heritage Places in Patna</h1>
+        <div class="image-container">
+            <div>
+                <a href="Chotaimambara.html"><h2>1. Chotaimambara</h2><br></a>
+                <a href="Chotaimambara.html"><img src="img/img1.jpg" alt=""></a>
+            </div>
+            <p>Chotaimambara is a beautiful and ancient temple in Patna, India. It is believed to have been built in the 11th century by King Chota Raja, and is dedicated to the Hindu god Vishnu. The temple is known for its intricate carvings and beautiful architecture, and is a popular tourist destination.</p>
+
+            <div>
+                <a href="Kila_Moti_Masjid.html"><h2>2. Kila Moti Masjid</h2><br></a>
+                <a href="Kila_Moti_Masjid.html"><img src="img/img2.jpg" alt=""></a>
+            </div>
+            <p>Kila Moti Masjid is a mosque in Patna, India. It was built in 1620 by Mughal Emperor Jahangir. The mosque is located in the heart of the city, near the Gandhi Maidan. It is one of the largest mosques in Patna and can accommodate up to 5,000 people. The mosque has a large courtyard and a marble prayer hall. The mosque is also known for its beautiful architecture and is a popular tourist attraction.</p>
+
+            <div>
+                <a href="Mahatma_Gandhi_Setu.html"><h2>3. Mahatma Gandhi Setu</h2><br></a>
+                <a href="Mahatma_Gandhi_Setu.html"><img src="img/img3.jpg" alt=""></a>
+            </div>
+            <p>The Mahatma Gandhi Setu, also known as the Gandhi Bridge, is a bridge over the river Ganges in Bihar, India. It connects the city of Patna in the south to Hajipur in the north. The bridge is one of the longest bridges in the world, with a length of 5,750 meters. It was built in the 1980s to replace the old bridge that was built in the 1930s. The Mahatma Gandhi Setu is named after the Indian independence leader Mahatma Gandhi.</p>
+
+            <div>
+                <a href="Golghar.html"><h2>4. Golghar</h2><br></a>
+                <a href="Golghar.html"><img src="img/img4.jpg" alt=""></a>
+            </div>
+            <p>Golghar is a large dome-shaped structure located in Patna, Bihar, India. Built by Captain John Garstin in 1786, it has a circumference of 140 m and is 29.8 m high. It was built as a granary to store grain for the British Garstin had seen a similar structure in St. Petersburg and was inspired to build one in Patna. The Golghar has a unique architecture and was used as a model for several buildings in the region. It is a popular tourist spot and offers a panoramic view of the city.</p>
+
+            <div>
+                <a href="Patna_Museum.html"><h2>5. Patna Museum</h2><br></a>
+                <a href="Patna_Museum.html"><img src="img/img5.jpg" alt=""></a>
+            </div>
+            <p>The Patna Museum is a repository of a rich and varied collection of antiquities, paintings, coins, sculptures, and natural history specimens. The museum has a rare collection of Archaeological finds dating back to the pre-historic, Mauryan, Sunga, Kushana, Gupta and Pala periods. The museum also houses a rich collection of coins, sculptures, paintings, and natural history specimens. The museum is a must-visit for history buffs and curious minds alike.</p>
+
+            <div>
+                <a href="Agam_Kuan.html"><h2>6. Agam Kuan</h2><br></a>
+                <a href="Agam_Kuan.html"><img src="img/img6.jpg" alt=""></a>
+            </div>
+            <p>Agam Kuan is a well that is believed to date back to the time of the Mauryan Empire in Patna. The well is located in a park that also contains ruins of an ancient fort. The well is said to be where Ashoka's grandson, Kunala, was allegedly blinded. Today, the well is a popular spot for locals and tourists alike to learn about the history of Patna.</p>
+
+    <footer>
+        <div>
+            <h2>About Us</h2>
+            <p>This Website is created by a student in Maulana Azad National Institute of Technology, Bhopal. It is one of the 31 National Institutes of Technology in India and has been declared as an Institute of National Importance by the Government of India. The institute was established in 1960 as Regional Engineering College Bhopal, and was later upgraded to National Institute of Technology in 2002.</p>
+        </div>
+
+        <hr>
+        <br>
+        <div class="footer">
+                    <div>
+                        <h2>Follow Us</h2>
+                        <ul>
+                            <a href="https://www.facebook.com/"><img id = "icon" src="https://img.icons8.com/ios/250/FFFFFF/facebook-new.png" alt=""></a>
+                            <a href="https://www.instagram.com/"><img id = "icon" src="https://img.icons8.com/ios/250/FFFFFF/instagram-new.png" alt=""></a>
+                            <a href="https://twitter.com/"><img id = "icon" src="https://img.icons8.com/ios/250/FFFFFF/twitter.png" alt=""></a>
+                            <a href="https://www.youtube.com/"><img id = "icon" src="https://img.icons8.com/ios/250/FFFFFF/youtube-play.png" alt=""></a>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Address</h2>
+                        <ul>
+                            <li>Patna, Bihar</li>
+                            <li>India</li>
+                            <li>800001</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Phone</h2>
+                        <ul>
+                            <li>+91 7678228684</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Email</h2>
+                        <ul>
+                            <li>princesharma2899@gmail.com</li>
+                        </ul>
+                    </div>
+        </div>
+    </footer>
+</body>
+</html>

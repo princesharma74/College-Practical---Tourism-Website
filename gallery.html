@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+</head>
+<style>
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .flex > div {
+        width: 30%;
+        margin: 8px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .flex > div > img {
+        width: 100%;
+        vertical-align: middle;
+        /* add shadow effect */
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .flex > div > img:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    /* add media query for tablet size */
+    @media screen and (max-width: 768px) {
+        .flex > div {
+            width: 45%;
+        }
+    }
+    /* add media query */
+    @media screen and (max-width: 600px) {
+        .flex > div {
+            width: 100%;
+        }
+        .flex{
+            flex-direction: column;
+        }
+    }
+
+    h1{
+        text-align: center;
+        /* add green gradient as a background */
+        color:black;
+        font-weight: 600;
+        font-size: 30px;
+        margin: 20px;
+    }
+
+</style>
+<body>
+    <header>
+        <div class="nav-container">
+            <div>
+                <img src="https://img.icons8.com/parakeet/96/null/deciduous-tree.png"/>
+                <span class="logo">Patna</span>
+            </div>
+            <div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="heritage.html">Heritage</a></li>
+                        <li><a href="hotel.html">Hotel Booking</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1>Gallery</h1>
+    <div class="flex">
+        <div><img src="img/img1.jpg" alt=""></div>
+        <div><img src="img/img2.jpg" alt=""></div>
+        <div><img src="img/img3.jpg" alt=""></div>
+        <div><img src="img/img4.jpg" alt=""></div>
+        <div><img src="img/img5.jpg" alt=""></div>
+        <div><img src="img/img6.jpg" alt=""></div>
+        <div><img src="img/img1.jpg" alt=""></div>
+        <div><img src="img/img2.jpg" alt=""></div>
+        <div><img src="img/img3.jpg" alt=""></div>
+        <div><img src="img/img4.jpg" alt=""></div>
+        <div><img src="img/img5.jpg" alt=""></div>
+        <div><img src="img/img6.jpg" alt=""></div>
+    </div>
+
+    <footer>
+        <div>
+            <h2>About Us</h2>
+            <p>This Website is created by a student in Maulana Azad National Institute of Technology, Bhopal. It is one of the 31 National Institutes of Technology in India and has been declared as an Institute of National Importance by the Government of India. The institute was established in 1960 as Regional Engineering College Bhopal, and was later upgraded to National Institute of Technology in 2002.</p>
+        </div>
+
+        <hr>
+        <br>
+        <div class="footer">
+                    <div>
+                        <h2>Follow Us</h2>
+                        <ul>
+                            <a href="https://www.facebook.com/"><img id = "icon" src="https://img.icons8.com/ios/250/FFFFFF/facebook-new.png" alt=""></a>
+                            <a href="https://www.instagram.com/"><img id = "icon" src="https://img.icons8.com/ios/250/FFFFFF/instagram-new.png" alt=""></a>
+                            <a href="https://twitter.com/"><img id = "icon" src="https://img.icons8.com/ios/250/FFFFFF/twitter.png" alt=""></a>
+                            <a href="https://www.youtube.com/"><img id = "icon" src="https://img.icons8.com/ios/250/FFFFFF/youtube-play.png" alt=""></a>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Address</h2>
+                        <ul>
+                            <li>Patna, Bihar</li>
+                            <li>India</li>
+                            <li>800001</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Phone</h2>
+                        <ul>
+                            <li>+91 7678228684</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Email</h2>
+                        <ul>
+                            <li>princesharma2899@gmail.com</li>
+                        </ul>
+                    </div>
+        </div>
+    </footer>
+</body>
+</html>
